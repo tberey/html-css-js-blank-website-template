@@ -64,7 +64,7 @@
 
 <!-- ABOUT THis PROJECT -->
 ## About This Project
-This is a fresh & blank website template, that simply uses HTML, CSS and JavaScript - view in any web browser. This is the perfect starting point for any project requiring a UI or client, as you can simply begin editing this template and go anywhere from there, without any hassle or unnecessary additions.
+This is a fresh & blank website template, that simply uses HTML, CSS and JavaScript - view in any web browser on a desktop or mobile. This is the perfect starting point for any project requiring a UI or client, as you can simply begin editing this template and go anywhere from there, without any hassle or unnecessary additions. Designed for any screen type or size!
 
 *This template is completely unrestricted, and free for anyone to use, unlimited, with no credit or acknowledgements needed.*
 
