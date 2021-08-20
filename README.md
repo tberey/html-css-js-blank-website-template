@@ -47,7 +47,12 @@
             <li><a href="#tech-stack">Tech Stack</a></li>
         </ul>
         </li>
-        <li><a href="#screenshots">Screenshots</a></li>
+        <li>
+          <a href="#usage">Usage</a>
+          <ul>
+            <li><a href="#screenshots">Screenshots</a></li>
+        </ul>
+        </li>
         <li><a href="#changelog">Changelog</a></li>
         <li><a href="#contributing">Contributing</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -75,7 +80,13 @@ This is a fresh & blank website template, that simply uses HTML, CSS and JavaScr
 
 
 <!-- USAGE EXAMPLES -->
-## Screenshots
+## Usage
+
+[Available to preview here.](https://tberey.github.io/html-css-js-blank-website-template/)
+
+<br>
+
+### Screenshots
 
 Desktop View #1<br>
 ![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/desktop1.png?raw=true)
