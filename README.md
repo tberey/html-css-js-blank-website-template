@@ -78,16 +78,16 @@ This is a fresh & blank website template, that simply uses HTML, CSS and JavaScr
 ## Screenshots
 
 Desktop View #1<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/local-logs-sample.png?raw=true)
+![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/desktop1.png?raw=true)
 
 Desktop View #2<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/local-logs-sample.png?raw=true)
+![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/desktop2.png?raw=true)
 
 Mobile View #1<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/local-logs-sample.png?raw=true)
+![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/mobile1.png?raw=true)
 
 Mobile View #1<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/local-logs-sample.png?raw=true)
+![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/mobile2.png?raw=true)
 
 <br><hr><br>
 
