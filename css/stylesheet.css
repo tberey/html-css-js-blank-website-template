@@ -1,0 +1,302 @@
+/* User Customization Options */
+:root {
+    --headerPadding: 5px;
+    --headerHeight: 85px; /* This also doubles as the Logo (img) height. */
+    --logoWidth: 180px;
+
+    --footerHeight: 45px;
+    --footerPadding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    [class^="col-"] {
+        width: 100% !important;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .contact {
+        height:1000px !important;
+        text-align: center;
+    }
+
+    :root {
+        --headerPadding: 0px;
+        --headerHeight: 50px; /* This also doubles as the Logo (img) height. */
+        --logoWidth: 120px;
+    }
+
+    header h2 {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    aside {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    margin-top: var(--headerPadding);
+    padding-top: var(--headerHeight);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(179, 143, 0);
+    background: #000049e8 url(../assets/oriental-tiles.png) repeat center bottom;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    height: var(--headerHeight);
+    padding-top: var(--headerPadding);
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(0, 2, 24, 0.6);
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+header a img.logo {
+    position: fixed;
+    width: var(--logoWidth);
+    height: var(--headerHeight);
+    top: 0px;
+    right: 0px;
+}
+
+header .menu-icon {
+    padding: 10px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: xx-large;
+    color: rgb(179, 143, 0);
+    background-color: rgb(0, 5, 43);
+    cursor: pointer;
+}
+
+header .menu {
+    width: fit-content;
+    height: 0px;
+    padding-top: var(--headerPadding);
+    position: fixed;
+    top: 50px;
+    left: 5px;
+    overflow: hidden;
+    font-size: large;
+    transition: all 0.4s ease;
+}
+
+header .menu a {
+    width: 110px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(0, 5, 43);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+header .menu a:hover {
+    background-color: rgb(0, 11, 97);
+    color: rgb(179, 143, 0);
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+header .menu a.current {
+    background-color: rgb(0, 11, 97);
+    color: rgb(255, 255, 255);
+    padding-left: 16px;
+}
+
+aside {
+    width: 10%;
+    min-width: 150px;
+    padding-top: var(--headerPadding);
+    padding-bottom: var(--footerPadding);
+    position: fixed;
+    top: var(--headerHeight);
+    bottom: var(--footerHeight);
+    right: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 2, 24, 0.5);
+    display: block;
+}
+
+aside h2 {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+[id^="aside-"] {
+    margin-top: 5px;
+    padding-bottom: 2px;
+}
+
+#aside-show {
+    padding: 5px;
+    position: fixed;
+    right: 15px;
+    font-size: 22px;
+    display: none;
+    border: 2px solid rgb(179, 143, 0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#aside-hide {
+    padding-left: 3px;
+    padding-right: 2px;
+    font-size: 22px;
+    border: 2px solid rgb(179, 143, 0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: var(--footerHeight);
+    padding-top: var(--footerPadding);
+    position: fixed;
+    bottom: 0px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(0, 2, 24, 0.85);
+}
+
+footer .top-button {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 100);
+    cursor: pointer;
+}
+
+footer #page-top {
+    padding: 15px;
+}
+
+section.contact {
+    height: 350px;
+    padding-top: 50px;
+    padding-bottom: var(--footerHeight);
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(24, 24, 24);
+}
+
+section.contact h3 {
+    font-size: 24px;
+}
+
+section.contact p {
+    font-size: 18px;
+}
+
+section.contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section.contact .col-4 {
+    text-align: center;
+    background-color: unset;
+}
+
+.grid {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.new-row {
+    clear: both;
+}
+
+[class^="col-"] {
+    float: left;
+    height: 250px;
+    word-wrap: break-word;
+}
+
+[class^="col-"] * {
+    margin: 5px;
+}
+
+.col-1 {
+    width: 100%;
+    background-color: rgba(149, 205, 255, 0.398);
+}
+
+.col-2 {
+    width: 50%;
+    background-color: rgba(255, 0, 0, 0.261);
+}
+
+.col-3 {
+    width: 33.3%;
+    background-color: rgba(0, 0, 255, 0.337);
+}
+
+.col-4 {
+    width: 25%;
+    background-color: rgba(13, 48, 2, 0.337);
+}
+
+.col-5 {
+    width: 20%;
+    background-color: rgba(255, 255, 0, 0.145);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.icons {
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 40px !important;
+}
