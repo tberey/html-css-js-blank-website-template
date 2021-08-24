@@ -71,9 +71,10 @@ This is a fresh & blank website template, that simply uses HTML, CSS and JavaScr
 <br>
 
 ### Tech Stack
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
-* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [HTML](https://en.wikipedia.org/wiki/HTML5)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
 * [JS](https://en.wikipedia.org/wiki/JavaScript)
+* [JQuery (JavaScript Library)](https://jquery.com/)
 
 <br><hr><br>
 
@@ -123,6 +124,7 @@ Below is the refined and confirmed roadmap, that has been planned for completion
 | Version | Date | Changes |
 |:---|:---|:---|
 | 1.0.0 | 2021-08-20 | <ul><li>Initial Commit.</li><li>Add initial directory structure and files.</li><li>Add Screenshots.</li><li>Create and format README.md</li></ul> |
+| 1.1.0 | 2021-08-24 | <ul><li>Update stylesheets and stylesheet structure, to be clearer</li><li>Add jQuery, and reformat JS code into jQuery.</li><li>New animated menu button.</li><li>Update screenshots.</li><li>Update README.md</li></ul> |
 
 <br><hr><br>
 

@@ -1,27 +1,29 @@
 window.addEventListener('DOMContentLoaded', async () => {
     if (window.innerWidth < 700) {
-        document.getElementById("aside-show").style.display = "block";
-        document.getElementById("aside").style.display = "none";
+        $("#aside-show").show();
+        $("#aside").hide();
     }
+
+    $('#menu-icon').click(function(){
+        $(this).toggleClass('open');
+
+        var e = $("#main-menu");
+        if (e.height() == '0px' || !e.height()) {
+            e.height('100%');
+        } else {
+            e.height('0px');
+        }
+    });
 });
 
-function menu() {
-    var e = document.getElementById("main-menu");
-    if (e.style.height == '0px' || e.style.height == '') {
-        e.style.height = '100%';
-    } else {
-        e.style.height = '0px';
-    }
-}
-
 function sideMenu() {
-    var e = document.getElementById("aside");
-    var e2 = document.getElementById("aside-show");
-    if (e.style.display === "none") {
-        e.style.display = "block";
-        e2.style.display = "none";
+    var e = $("#aside");
+    var e2 = $("#aside-show");
+    if (e.css("display") == "none") {
+        e.show();
+        e2.hide();
     } else {
-        e.style.display = "none";
-        e2.style.display = "block";
+        e.hide();
+        e2.show();
     }
 }

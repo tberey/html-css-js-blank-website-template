@@ -1,0 +1,332 @@
+/* Setup Page Infrastructure (Base Layer) */
+
+:root {
+    --headerPadding: 5px;
+    --headerHeight: 85px; /* This also doubles as the Logo (img) height. */
+    --logoWidth: 180px;
+
+    --footerHeight: 45px;
+    --footerPadding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        --headerPadding: 0px;
+        --headerHeight: 50px; /* This also doubles as the Logo (img) height. */
+        --logoWidth: 120px;
+    }
+    
+    [class^="col-"] {
+        width: 100% !important;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .contact {
+        height:1000px !important;
+        text-align: center;
+    }
+
+    header h2 {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    aside {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    margin-top: var(--headerPadding);
+    padding-top: var(--headerHeight);
+}
+
+header {
+    width: 100%;
+    height: var(--headerHeight);
+    padding-top: var(--headerPadding);
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(0, 2, 24, 0.6);
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+header a img.logo {
+    position: fixed;
+    width: var(--logoWidth);
+    height: var(--headerHeight);
+    top: 0px;
+    right: 0px;
+}
+
+header .menu {
+    width: 200px;
+    height: 0px;
+    padding-top: var(--headerPadding);
+    position: fixed;
+    top: 50px;
+    left: 5px;
+    overflow: hidden;
+    font-size: large;
+    transition: all 0.4s ease;
+}
+
+header .menu a {
+    width: 110px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(0, 5, 43);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+header .menu a:hover {
+    background-color: rgb(0, 11, 97);
+    color: rgb(179, 143, 0);
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+header .menu a.current {
+    background-color: rgb(0, 11, 97);
+    color: rgb(255, 255, 255);
+    padding-left: 16px;
+}
+
+header #menu-icon {
+    width: 50px;
+    height: 45px;
+    position: fixed;
+    top: 8px;
+    left: 15px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(0, 5, 43);
+    cursor: pointer;
+}
+
+header #menu-icon span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: rgb(179, 143, 0);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+header #menu-icon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+header #menu-icon span:nth-child(2) {
+    top: 18px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+header #menu-icon span:nth-child(3) {
+    top: 36px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+header #menu-icon.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+header #menu-icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+header #menu-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 33px;
+    left: 8px;
+}
+
+aside {
+    width: 11%;
+    min-width: 175px;
+    padding-top: var(--headerPadding);
+    padding-bottom: var(--footerPadding);
+    position: fixed;
+    top: var(--headerHeight);
+    bottom: var(--footerHeight);
+    right: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 2, 24, 0.5);
+    display: block;
+}
+
+aside h2 {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+[id^="aside-"] {
+    margin-top: 5px;
+    padding-bottom: 2px;
+}
+
+#aside-show {
+    padding: 5px;
+    position: fixed;
+    right: 15px;
+    font-size: 22px;
+    display: none;
+    border: 2px solid rgb(179, 143, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+#aside-hide {
+    padding-left: 3px;
+    padding-right: 2px;
+    font-size: 22px;
+    border: 2px solid rgb(179, 143, 0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: var(--footerHeight);
+    padding-top: var(--footerPadding);
+    position: fixed;
+    bottom: 0px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(0, 2, 24, 0.85);
+}
+
+footer .top-button {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 100);
+    cursor: pointer;
+}
+
+footer #page-top {
+    padding: 15px;
+}
+
+section.contact {
+    height: 350px;
+    padding-top: 50px;
+    padding-bottom: var(--footerHeight);
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(24, 24, 24);
+}
+
+section.contact h3 {
+    font-size: 24px;
+}
+
+section.contact p {
+    font-size: 18px;
+}
+
+section.contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+[class^="col-"] {
+    float: left;
+    word-wrap: break-word;
+}
+
+[class^="col-"] * {
+    margin: 5px;
+}
+
+.new-row {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.icons {
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 40px !important;
+}

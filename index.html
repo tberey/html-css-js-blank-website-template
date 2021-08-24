@@ -9,13 +9,18 @@
         <meta name="author" content="TomCo">
 
         <link rel="icon" type="image/png" href="favicon.png"/>
-        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
         <header>
-            <i class="fa fa-bars menu-icon" onclick="menu()"></i>
+            <div id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="menu" id="main-menu">
                 <a href="index.html" class="current"><i class="fa fa-home"></i> Home <i class="fa fa-home"></i></a>
                 <a href="page.html"><i class="fa fa-square"></i> Page <i class="fa fa-square"></i></a>
@@ -84,6 +89,7 @@
             <a class="top-button" href="#top"><i class="fa fa-arrow-up" id="page-top"></i></a>
         </footer>
 
+        <link rel="stylesheet" href="css/stylesheet.css">
         <script src="js/script.js"></script>
     </body>
 </html>
