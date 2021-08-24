@@ -90,16 +90,19 @@ This is a fresh & blank website template, that simply uses HTML, CSS and JavaScr
 ### Screenshots
 
 Desktop View #1<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/desktop1.png?raw=true)
+![Desktop#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/desktop1.png?raw=true)
 
 Desktop View #2<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/desktop2.png?raw=true)
+![Desktop#2](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/desktop2.png?raw=true)
 
 Mobile View #1<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/mobile1.png?raw=true)
+![Mobile#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/mobile1.png?raw=true)
 
-Mobile View #1<br>
-![Screenshot#1](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/mobile2.png?raw=true)
+Mobile View #2<br>
+![Mobile#2](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/mobile2.png?raw=true)
+
+Sample Grid View<br>
+![Grid-View](https://github.com/tberey/html-css-js-blank-website-template/blob/master/screenshots/grid-view.png?raw=true)
 
 <br><hr><br>
 
